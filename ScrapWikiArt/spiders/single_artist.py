@@ -1,3 +1,5 @@
+# scrapy runspider -o data/data.csv -t csv ScrapWikiArt/spiders/single_artist.py
+
 import scrapy
 from bs4 import BeautifulSoup
 from ScrapWikiArt.items import ImageItem
