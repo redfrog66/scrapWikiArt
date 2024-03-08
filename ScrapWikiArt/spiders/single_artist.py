@@ -8,13 +8,13 @@ class SingleArtistSpider(scrapy.Spider):
     name = "single_artist"
     allowed_domains = ["wikiart.org"]
     domain = "wikiart.org"
-    start_urls = ["https://www.wikiart.org/en/giovanni-battista-piranesi/all-works/text-list"]  # replace 'artist-name' with the actual artist's name
+    start_urls = ["https://www.wikiart.org/en/gustav-klimt/all-works/text-list"]  # replace 'artist-name' with the actual artist's name
     id = 0
     custom_settings = {
         "ITEM_PIPELINES": {
             'scrapy.pipelines.images.ImagesPipeline': 1,
         },
-        "IMAGES_STORE": "data/img/giovanni-battista-piranesi",
+        "IMAGES_STORE": "data/img/gustav-klimt",
     }
 
     def parse(self, response):
