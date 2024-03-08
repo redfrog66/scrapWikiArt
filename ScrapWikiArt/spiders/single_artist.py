@@ -1,6 +1,5 @@
 import scrapy
 from bs4 import BeautifulSoup
-
 from ScrapWikiArt.items import ImageItem
 
 class SingleArtistSpider(scrapy.Spider):
