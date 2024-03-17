@@ -24,6 +24,21 @@ class ImageItem(scrapy.Item):
     image_urls = scrapy.Field()
     images = scrapy.Field()
 
+class CustomImageItem(scrapy.Item):
+    Id = scrapy.Field()
+    URL = scrapy.Field()
+    Title = scrapy.Field()
+    OriginalTitle = scrapy.Field()
+    Styles = scrapy.Field()
+    Genre = scrapy.Field()
+    Media = scrapy.Field()
+    Description = scrapy.Field()
+    WikiDescription = scrapy.Field()
+    WikiLink = scrapy.Field()
+    Tags = scrapy.Field()
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
+
 
 class ArtistItem(scrapy.Item):
     Id = scrapy.Field()
