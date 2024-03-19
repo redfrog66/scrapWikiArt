@@ -20,7 +20,7 @@ from scrapy.exceptions import DropItem
 class CustomImagesPipeline(ImagesPipeline):
     def file_path(self, request, response=None, info=None, *, item=None):
         image_guid = request.url.split('/')[-1].split('.')[0]  # extract the image number from the URL
-        artist_name = "klimt"  # piranes
+        artist_name = "piranesi"  # piranesi / klimt
         return f'{artist_name}_image{image_guid}.jpg'
 
     def get_media_requests(self, item, info):

@@ -8,7 +8,7 @@ class SingleArtistSpider(scrapy.Spider):
     name = "single_artist"
     allowed_domains = ["wikiart.org"]
     domain = "wikiart.org"
-    artist = "gustav-klimt"
+    artist = "gustav-klimt" # giovanni-battista-piranesi / gustav-klimt
     start_urls = ["https://www.wikiart.org/en/${artist}/all-works/text-list"]
     id = 0
     custom_settings = {
